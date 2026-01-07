@@ -1,0 +1,76 @@
+# Model Evaluation Report
+## Home Price Prediction Project
+
+## 1. Objective
+The objective of this report is to evaluate the performance of regression models
+used for predicting house prices and select the best-performing model.
+
+---
+
+## 2. Models Implemented
+The following regression models were trained and tested:
+- Linear Regression
+- Ridge Regression
+- Lasso Regression
+
+---
+
+## 3. Evaluation Metrics
+To measure model performance, the following metrics were used:
+- **Mean Squared Error (MSE)** – Measures average squared prediction error
+- **Mean Absolute Error (MAE)** – Measures average absolute error
+- **Root Mean Squared Error (RMSE)** – Penalizes large errors
+- **R² Score** – Measures how well features explain price variance
+
+---
+
+## 4. Model Performance Analysis
+
+### Linear Regression
+- Provided baseline performance
+- Showed signs of slight overfitting
+- Performance gap observed between training and testing data
+
+---
+
+### Ridge Regression
+- Reduced overfitting using L2 regularization
+- Improved generalization on test data
+- Stable coefficient values
+
+---
+
+### Lasso Regression
+- Applied L1 regularization
+- Reduced model complexity by shrinking some coefficients to zero
+- Helped in feature selection
+
+---
+
+## 5. Overfitting & Underfitting Check
+- Linear Regression: Mild overfitting
+- Ridge Regression: Balanced bias-variance tradeoff
+- Lasso Regression: Slightly higher bias but better interpretability
+
+---
+
+## 6. Best Model Selection
+Ridge and Lasso Regression models performed better than Linear Regression.
+Among them, the model with:
+- Lower RMSE
+- Higher R² Score
+
+was selected as the final model.
+
+---
+
+## 7. Business Interpretation
+- The model predicts house prices with acceptable accuracy
+- Useful for real estate valuation and decision-making
+- Helps reduce manual estimation errors
+
+---
+
+## 8. Final Conclusion
+Regularization techniques significantly improved model stability and performance.
+The final model is reliable for predicting house prices on unseen data.
