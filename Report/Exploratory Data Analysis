@@ -1,0 +1,85 @@
+# Exploratory Data Analysis (EDA)
+## Home Price Prediction Project
+
+## 1. Introduction
+Exploratory Data Analysis (EDA) is performed to understand the structure, quality,
+and patterns present in the housing dataset. This step helps identify missing values,
+outliers, and important relationships between features and house prices.
+
+---
+
+## 2. Dataset Overview
+- Dataset Type: Real Estate Housing Data
+- Number of Records: Based on CSV file
+- Target Variable: **Price**
+- Feature Types:
+  - Numerical: Rooms, Distance, Bedroom2, Bathroom, Car, Landsize, BuildingArea
+  - Categorical: Suburb, Type, Method, Regionname, SellerG
+
+---
+
+## 3. Data Understanding
+- Printed column names to understand available features
+- Used descriptive statistics to analyze mean, median, min, max, and distribution
+- Identified columns irrelevant for price prediction
+
+---
+
+## 4. Missing Value Analysis
+- Checked missing values column-wise
+- Observed missing data in:
+  - Distance
+  - Bedroom2
+  - Bathroom
+  - Car
+  - Landsize
+  - BuildingArea
+- Missing values can negatively affect model accuracy if not handled properly
+
+---
+
+## 5. Data Cleaning
+### Dropped Columns
+The following columns were removed because they do not directly contribute to
+price prediction or introduce unnecessary noise:
+- Address
+- Date
+- YearBuilt
+- Latitude
+- Longitude
+
+---
+
+## 6. Handling Missing Values
+- Filled missing values in count-based columns (Distance, Bedroom2, Bathroom, Car)
+  using **0**
+- Filled missing values in continuous columns (Landsize, BuildingArea) using **Mean**
+
+---
+
+## 7. Feature Engineering
+- Converted categorical variables into numerical form using **dummy encoding**
+- Ensured all features are machine learning compatible
+- Avoided multicollinearity by dropping first dummy variable
+
+---
+
+## 8. Data Distribution & Patterns
+- Higher number of rooms generally increases house price
+- Houses closer to CBD tend to have higher prices
+- Larger land size positively impacts house value
+- Outliers observed in price and land size
+
+---
+
+## 9. Key Insights
+- Distance from CBD is a strong price indicator
+- Property size significantly affects price
+- Categorical features like region and property type influence pricing
+
+---
+
+## 10. Conclusion
+EDA helped in identifying important patterns, cleaning the data, and preparing
+the dataset for machine learning models. The cleaned dataset is suitable for
+regression modeling.
