@@ -85,5 +85,5 @@ This project helps stakeholders:
    pip install -r requirements.txt
 
  👤 Author
--Harsh Devmurari
--Aspiring Data Analyst | Python | SQL | Machine Learning
+- Harsh Devmurari
+- Aspiring Data Analyst | Python | SQL | Machine Learning
