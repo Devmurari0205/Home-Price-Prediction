@@ -84,6 +84,6 @@ This project helps stakeholders:
    ```bash
    pip install -r requirements.txt
 
-👤 Author
-Harsh Devmani
-Aspiring Data Analyst | Python | SQL | Machine Learning
+ 👤 Author
+-Harsh Devmurari
+-Aspiring Data Analyst | Python | SQL | Machine Learning
